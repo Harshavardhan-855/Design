@@ -1,0 +1,67 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VC56GX in circuit vco (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_UBPJLS in circuit vco (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_CDSMYA in circuit vco (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_42S873 in circuit vco (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UYM7GH in circuit vco (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VC5S4W in circuit vco (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_JT8PYA in circuit vco (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_JLF2PR in circuit vco (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VC5YSW in circuit vco (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_Z85QYA in circuit vco (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_PPAFLS in circuit vco (0)(1 instance)
+
+Class vco (0):  Merged 236 parallel devices.
+Subcircuit summary:
+Circuit 1: vco                             |Circuit 2: vco                             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (125->7)           |sky130_fd_pr__pfet_01v8 (7)                
+sky130_fd_pr__nfet_01v8 (125->7)           |sky130_fd_pr__nfet_01v8 (7)                
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: vco                             |Circuit 2: vco                             
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+vctrl                                      |vctrl                                      
+out                                        |out                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes vco and vco are equivalent.
+
+Final result: Circuits match uniquely.
+.

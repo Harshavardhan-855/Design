@@ -1,0 +1,30 @@
+magic
+tech sky130A
+timestamp 1709903010
+<< checkpaint >>
+rect -630 -1630 5513 1131
+<< metal1 >>
+rect 0 0 100 100
+rect 0 -200 100 -100
+rect 0 -400 100 -300
+rect 0 -600 100 -500
+rect 0 -800 100 -700
+rect 0 -1000 100 -900
+use int_pfd_cp  x1
+timestamp 1709899883
+transform 1 0 0 0 1 212
+box 0 -1212 4883 289
+<< labels >>
+flabel metal1 0 0 100 100 0 FreeSans 128 0 0 0 VDD
+port 0 nsew
+flabel metal1 0 -200 100 -100 0 FreeSans 128 0 0 0 VSS
+port 1 nsew
+flabel metal1 0 -400 100 -300 0 FreeSans 128 0 0 0 cp_bias
+port 2 nsew
+flabel metal1 0 -600 100 -500 0 FreeSans 128 0 0 0 A
+port 3 nsew
+flabel metal1 0 -800 100 -700 0 FreeSans 128 0 0 0 B
+port 4 nsew
+flabel metal1 0 -1000 100 -900 0 FreeSans 128 0 0 0 cp_out
+port 5 nsew
+<< end >>

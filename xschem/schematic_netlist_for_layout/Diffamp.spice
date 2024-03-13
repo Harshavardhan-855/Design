@@ -1,0 +1,10 @@
+** sch_path: /home/harsh/design/xschem/Diffamp.sch
+.subckt Diffamp vdd vss inp1 inp2 out2 out1 vbias
+*.PININFO vdd:B vss:B inp1:I inp2:I out2:O out1:O vbias:I
+XM1 out1 inp1 net1 vss sky130_fd_pr__nfet_01v8 L=0.30 W=50 nf=10 m=1
+XM2 out2 inp2 net1 vss sky130_fd_pr__nfet_01v8 L=0.30 W=50 nf=10 m=1
+R1 out1 vdd sky130_fd_pr__res_generic_po W=1 L=2.5 m=1
+R2 out2 vdd sky130_fd_pr__res_generic_po W=1 L=2.5 m=1
+XM3 net1 vbias vss vss sky130_fd_pr__nfet_01v8 L=0.30 W=50 nf=10 m=1
+.ends
+.end

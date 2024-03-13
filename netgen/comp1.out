@@ -1,0 +1,243 @@
+
+Circuit 2 cell sky130_fd_sc_hd__dfxbp_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__dfxbp_2 (0):  Merged 4 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dfxbp_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dfxbp_2        |Circuit 2: sky130_fd_sc_hd__dfxbp_2        
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |1                                          
+(no matching pin)                          |2                                          
+(no matching pin)                          |3                                          
+(no matching pin)                          |4                                          
+(no matching pin)                          |5                                          
+(no matching pin)                          |6                                          
+(no matching pin)                          |7                                          
+(no matching pin)                          |8                                          
+CLK                                        |(no matching pin)                          
+D                                          |(no matching pin)                          
+VGND                                       |(no matching pin)                          
+VNB                                        |(no matching pin)                          
+VPB                                        |(no matching pin)                          
+VPWR                                       |(no matching pin)                          
+Q                                          |(no matching pin)                          
+Q_N                                        |(no matching pin)                          
+a_1589_47#                                 |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dfxbp_2 and sky130_fd_sc_hd__dfxbp_2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: divider_3N                      |Circuit 2: divider_3N                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__dfxbp_2 (3)               |sky130_fd_sc_hd__dfxbp_2 (3)               
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 38 **Mismatch**            |Number of nets: 36 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: divider_3N                      |Circuit 2: divider_3N                      
+
+---------------------------------------------------------------------------------------
+Net: x3/D                                  |Net: net1                                  
+  sky130_fd_sc_hd__dfxbp_2/CLK = 1         |  sky130_fd_sc_hd__dfxbp_2/2 = 1           
+  sky130_fd_sc_hd__dfxbp_2/D = 1           |  sky130_fd_sc_hd__dfxbp_2/8 = 1           
+  sky130_fd_sc_hd__dfxbp_2/a_1589_47# = 1  |  sky130_fd_sc_hd__dfxbp_2/1 = 1           
+                                           |                                           
+Net: x1/D                                  |Net: net2                                  
+  sky130_fd_sc_hd__dfxbp_2/D = 1           |  sky130_fd_sc_hd__dfxbp_2/2 = 1           
+  sky130_fd_sc_hd__dfxbp_2/a_1589_47# = 1  |  sky130_fd_sc_hd__dfxbp_2/8 = 1           
+  sky130_fd_sc_hd__dfxbp_2/CLK = 1         |  sky130_fd_sc_hd__dfxbp_2/1 = 1           
+                                           |                                           
+Net: vss                                   |(no matching net)                          
+  sky130_fd_sc_hd__dfxbp_2/VGND = 3        |                                           
+                                           |                                           
+Net: VSUBS                                 |(no matching net)                          
+  sky130_fd_sc_hd__dfxbp_2/VNB = 3         |                                           
+                                           |                                           
+Net: x3/VPB                                |(no matching net)                          
+  sky130_fd_sc_hd__dfxbp_2/VPB = 3         |                                           
+                                           |                                           
+Net: vdd                                   |(no matching net)                          
+  sky130_fd_sc_hd__dfxbp_2/VPWR = 3        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: vdd                                   
+                                           |  sky130_fd_sc_hd__dfxbp_2/5 = 3           
+                                           |  sky130_fd_sc_hd__dfxbp_2/6 = 3           
+                                           |                                           
+(no matching net)                          |Net: vss                                   
+                                           |  sky130_fd_sc_hd__dfxbp_2/3 = 3           
+                                           |  sky130_fd_sc_hd__dfxbp_2/4 = 3           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: x2/D                                  |Net: net3                                  
+  sky130_fd_sc_hd__dfxbp_2/D = 1           |  sky130_fd_sc_hd__dfxbp_2/2 = 1           
+  sky130_fd_sc_hd__dfxbp_2/a_1589_47# = 1  |  sky130_fd_sc_hd__dfxbp_2/8 = 1           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: dummy_36                              |Net: dummy_36                              
+  sky130_fd_sc_hd__dfxbp_2/proxy6 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxya_1589_47# 
+                                           |                                           
+Net: dummy_35                              |Net: dummy_35                              
+  sky130_fd_sc_hd__dfxbp_2/proxy5 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyQ_N = 1    
+                                           |                                           
+Net: dummy_34                              |Net: dummy_34                              
+  sky130_fd_sc_hd__dfxbp_2/proxy4 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyQ = 1      
+                                           |                                           
+Net: dummy_33                              |Net: dummy_33                              
+  sky130_fd_sc_hd__dfxbp_2/proxy3 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVPWR = 1   
+                                           |                                           
+Net: dummy_32                              |Net: dummy_32                              
+  sky130_fd_sc_hd__dfxbp_2/proxy2 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVPB = 1    
+                                           |                                           
+Net: dummy_31                              |Net: dummy_31                              
+  sky130_fd_sc_hd__dfxbp_2/proxy1 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVNB = 1    
+                                           |                                           
+Net: dummy_30                              |Net: dummy_30                              
+  sky130_fd_sc_hd__dfxbp_2/proxy8 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVGND = 1   
+                                           |                                           
+Net: dummy_29                              |Net: dummy_29                              
+  sky130_fd_sc_hd__dfxbp_2/proxy7 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyD = 1      
+                                           |                                           
+Net: dummy_28                              |Net: dummy_28                              
+  sky130_fd_sc_hd__dfxbp_2/proxy6 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyCLK = 1    
+                                           |                                           
+Net: dummy_27                              |Net: dummy_27                              
+  sky130_fd_sc_hd__dfxbp_2/proxy5 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxya_1589_47# 
+                                           |                                           
+Net: dummy_26                              |Net: dummy_26                              
+  sky130_fd_sc_hd__dfxbp_2/proxy4 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyQ_N = 1    
+                                           |                                           
+Net: dummy_25                              |Net: dummy_25                              
+  sky130_fd_sc_hd__dfxbp_2/proxy3 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyQ = 1      
+                                           |                                           
+Net: dummy_24                              |Net: dummy_24                              
+  sky130_fd_sc_hd__dfxbp_2/proxy2 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVPWR = 1   
+                                           |                                           
+Net: dummy_23                              |Net: dummy_23                              
+  sky130_fd_sc_hd__dfxbp_2/proxy1 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVPB = 1    
+                                           |                                           
+Net: dummy_22                              |Net: dummy_22                              
+  sky130_fd_sc_hd__dfxbp_2/proxy8 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVNB = 1    
+                                           |                                           
+Net: dummy_21                              |Net: dummy_21                              
+  sky130_fd_sc_hd__dfxbp_2/proxy7 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVGND = 1   
+                                           |                                           
+Net: dummy_20                              |Net: dummy_20                              
+  sky130_fd_sc_hd__dfxbp_2/proxy6 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyD = 1      
+                                           |                                           
+Net: dummy_19                              |Net: dummy_19                              
+  sky130_fd_sc_hd__dfxbp_2/proxy5 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyCLK = 1    
+                                           |                                           
+Net: dummy_18                              |Net: dummy_18                              
+  sky130_fd_sc_hd__dfxbp_2/proxy4 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxya_1589_47# 
+                                           |                                           
+Net: dummy_17                              |Net: dummy_17                              
+  sky130_fd_sc_hd__dfxbp_2/proxy3 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyQ_N = 1    
+                                           |                                           
+Net: dummy_16                              |Net: dummy_16                              
+  sky130_fd_sc_hd__dfxbp_2/proxy2 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyQ = 1      
+                                           |                                           
+Net: dummy_15                              |Net: dummy_15                              
+  sky130_fd_sc_hd__dfxbp_2/proxy1 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVPWR = 1   
+                                           |                                           
+Net: dummy_38                              |Net: dummy_14                              
+  sky130_fd_sc_hd__dfxbp_2/proxy8 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVPB = 1    
+                                           |                                           
+Net: dummy_37                              |Net: dummy_13                              
+  sky130_fd_sc_hd__dfxbp_2/proxy7 = 1      |  sky130_fd_sc_hd__dfxbp_2/proxyVNB = 1    
+                                           |                                           
+Net: x2/Q_N                                |Net: dummy_12                              
+  sky130_fd_sc_hd__dfxbp_2/Q_N = 1         |  sky130_fd_sc_hd__dfxbp_2/proxyVGND = 1   
+                                           |                                           
+Net: x1/Q_N                                |Net: dummy_11                              
+  sky130_fd_sc_hd__dfxbp_2/Q_N = 1         |  sky130_fd_sc_hd__dfxbp_2/proxyD = 1      
+                                           |                                           
+Net: x3/Q_N                                |Net: dummy_10                              
+  sky130_fd_sc_hd__dfxbp_2/Q_N = 1         |  sky130_fd_sc_hd__dfxbp_2/proxyCLK = 1    
+                                           |                                           
+Net: out_c                                 |Net: out_c                                 
+  sky130_fd_sc_hd__dfxbp_2/Q = 1           |  sky130_fd_sc_hd__dfxbp_2/7 = 1           
+                                           |                                           
+Net: out_b                                 |Net: out_b                                 
+  sky130_fd_sc_hd__dfxbp_2/Q = 1           |  sky130_fd_sc_hd__dfxbp_2/7 = 1           
+                                           |                                           
+Net: out_a                                 |Net: out_a                                 
+  sky130_fd_sc_hd__dfxbp_2/Q = 1           |  sky130_fd_sc_hd__dfxbp_2/7 = 1           
+                                           |                                           
+Net: clock                                 |Net: clock                                 
+  sky130_fd_sc_hd__dfxbp_2/CLK = 1         |  sky130_fd_sc_hd__dfxbp_2/1 = 1           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: divider_3N                      |Circuit 2: divider_3N                      
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__dfxbp_2:x2      |Instance: sky130_fd_sc_hd__dfxbp_2:2       
+  CLK = 3                                  |  proxyCLK = 1                             
+  D = 2                                    |  proxyD = 1                               
+  VGND = 3                                 |  proxyVGND = 1                            
+  VNB = 3                                  |  proxyVNB = 1                             
+  VPB = 3                                  |  proxyVPB = 1                             
+  VPWR = 3                                 |  proxyVPWR = 1                            
+  Q = 1                                    |  proxyQ = 1                               
+  Q_N = 1                                  |  proxyQ_N = 1                             
+  a_1589_47# = 2                           |  proxya_1589_47# = 1                      
+  proxy1 = 1                               |  1 = 3                                    
+  proxy2 = 1                               |  2 = 2                                    
+  proxy3 = 1                               |  3 = 6                                    
+  proxy4 = 1                               |  4 = 6                                    
+  proxy5 = 1                               |  5 = 6                                    
+  proxy6 = 1                               |  6 = 6                                    
+  proxy7 = 1                               |  7 = 1                                    
+  proxy8 = 1                               |  8 = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dfxbp_2:x3      |Instance: sky130_fd_sc_hd__dfxbp_2:1       
+  CLK = 1                                  |  proxyCLK = 1                             
+  D = 3                                    |  proxyD = 1                               
+  VGND = 3                                 |  proxyVGND = 1                            
+  VNB = 3                                  |  proxyVNB = 1                             
+  VPB = 3                                  |  proxyVPB = 1                             
+  VPWR = 3                                 |  proxyVPWR = 1                            
+  Q = 1                                    |  proxyQ = 1                               
+  Q_N = 1                                  |  proxyQ_N = 1                             
+  a_1589_47# = 3                           |  proxya_1589_47# = 1                      
+  proxy1 = 1                               |  1 = 3                                    
+  proxy2 = 1                               |  2 = 3                                    
+  proxy3 = 1                               |  3 = 6                                    
+  proxy4 = 1                               |  4 = 6                                    
+  proxy5 = 1                               |  5 = 6                                    
+  proxy6 = 1                               |  6 = 6                                    
+  proxy7 = 1                               |  7 = 1                                    
+  proxy8 = 1                               |  8 = 3                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dfxbp_2:x1      |Instance: sky130_fd_sc_hd__dfxbp_2:3       
+  CLK = 3                                  |  proxyCLK = 1                             
+  D = 3                                    |  proxyD = 1                               
+  VGND = 3                                 |  proxyVGND = 1                            
+  VNB = 3                                  |  proxyVNB = 1                             
+  VPB = 3                                  |  proxyVPB = 1                             
+  VPWR = 3                                 |  proxyVPWR = 1                            
+  Q = 1                                    |  proxyQ = 1                               
+  Q_N = 1                                  |  proxyQ_N = 1                             
+  a_1589_47# = 3                           |  proxya_1589_47# = 1                      
+  proxy1 = 1                               |  1 = 1                                    
+  proxy2 = 1                               |  2 = 3                                    
+  proxy3 = 1                               |  3 = 6                                    
+  proxy4 = 1                               |  4 = 6                                    
+  proxy5 = 1                               |  5 = 6                                    
+  proxy6 = 1                               |  6 = 6                                    
+  proxy7 = 1                               |  7 = 1                                    
+  proxy8 = 1                               |  8 = 3                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: divider_3N                      |Circuit 2: divider_3N                      
+-------------------------------------------|-------------------------------------------
+Cell pin lists are equivalent.
+Device classes divider_3N and divider_3N are equivalent.
+
+Final result: Netlists do not match.

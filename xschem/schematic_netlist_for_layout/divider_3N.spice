@@ -1,0 +1,12 @@
+** sch_path: /home/harsh/design/xschem/PLL_FOLDER/divider/divider_3N.sch
+.subckt divider_3N clock out_a out_b out_c vdd vss
+*.PININFO clock:I out_a:O out_b:O out_c:O vdd:B vss:B
+x3 clock net1 VSS VSS VDD VDD out_a net1 sky130_fd_sc_hd__dfxbp_2
+x1 net1 net2 VSS VSS VDD VDD out_b net2 sky130_fd_sc_hd__dfxbp_2
+x2 net2 net3 VSS VSS VDD VDD out_c net3 sky130_fd_sc_hd__dfxbp_2
+.ends
+
+
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.end

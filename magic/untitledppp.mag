@@ -1,0 +1,16 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1708417855
+<< checkpaint >>
+rect 4624 6060 13468 11363
+rect -1260 -660 13468 6060
+use pfd  x1
+timestamp 1708417855
+transform 1 0 304 0 1 3608
+box -304 -3008 5580 1192
+use cp_schem  x2
+timestamp 1708417855
+transform 1 0 5884 0 1 2600
+box 0 -2000 6324 7503
+<< end >>

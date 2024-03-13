@@ -1,0 +1,28 @@
+* NGSPICE file created from cs_amplifier.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_xhigh_po_0p35_4SYHMP a_n35_n466# a_n165_n596# a_n35_34#
+X0 a_n35_34# a_n35_n466# a_n165_n596# sky130_fd_pr__res_xhigh_po_0p35 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_4H4H2H a_262_n588# a_n328_n588# a_n501_n500# a_561_n500#
++ a_n383_n500# a_498_n588# a_144_n588# a_443_n500# a_n265_n500# a_26_n588# a_n619_n500#
++ a_325_n500# a_n147_n500# a_n210_n588# a_207_n500# a_n564_n588# a_n29_n500# a_n92_n588#
++ a_n721_n674# a_380_n588# a_n446_n588# a_89_n500#
+X0 a_n383_n500# a_n446_n588# a_n501_n500# a_n721_n674# sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.3
+X1 a_n29_n500# a_n92_n588# a_n147_n500# a_n721_n674# sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.3
+X2 a_325_n500# a_262_n588# a_207_n500# a_n721_n674# sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.3
+X3 a_n265_n500# a_n328_n588# a_n383_n500# a_n721_n674# sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.3
+X4 a_561_n500# a_498_n588# a_443_n500# a_n721_n674# sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.58 as=0.725 ps=5.29 w=5 l=0.3
+X5 a_89_n500# a_26_n588# a_n29_n500# a_n721_n674# sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.3
+X6 a_207_n500# a_144_n588# a_89_n500# a_n721_n674# sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.3
+X7 a_n501_n500# a_n564_n588# a_n619_n500# a_n721_n674# sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=1.45 ps=10.58 w=5 l=0.3
+X8 a_n147_n500# a_n210_n588# a_n265_n500# a_n721_n674# sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.3
+X9 a_443_n500# a_380_n588# a_325_n500# a_n721_n674# sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.3
+.ends
+
+.subckt cs_amplifier vdd output input gnd
+XXR1 output gnd vdd sky130_fd_pr__res_xhigh_po_0p35_4SYHMP
+XXM1 input input gnd output output input input gnd gnd input output output output
++ input gnd input gnd input gnd input input output sky130_fd_pr__nfet_01v8_4H4H2H
+.ends
+

@@ -1,0 +1,54 @@
+** sch_path: /home/harsh/design/xschem/pfd/pfd_tran_tb.sch
+**.subckt pfd_tran_tb
+x1 GND VDD A QA QB B pfd
+V1 VDD GND 3
+V2 B GND pulse(0 1.8 40n 1n 1n 100n 200n)
+V3 A GND pulse(0 1.8 20n 1n 1n 100n 200n)
+x2 GND VDD A QA1 QB1 B pfd1
+**** begin user architecture code
+
+
+.options acct list
+.temp 25
+
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+.control
+save all
+tran 1n 2u
+write pfd_tran.raw
+
+.endc
+
+
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  pfd/pfd.sym # of pins=6
+** sym_path: /home/harsh/design/xschem/pfd/pfd.sym
+** sch_path: /home/harsh/design/xschem/pfd/pfd.sch
+.subckt pfd VSS VDD A QA QB B
+*.iopin VDD
+*.iopin A
+*.iopin B
+*.iopin QA
+*.iopin QB
+*.iopin VSS
+x1 A VDD reset VSS VSS VDD VDD QA net2 sky130_fd_sc_hd__dfrbp_2
+x2 QA QB VSS VSS VDD VDD net1 sky130_fd_sc_hd__and2_2
+x3 B VDD reset VSS VSS VDD VDD QB net3 sky130_fd_sc_hd__dfrbp_2
+x4 net1 VSS VSS VDD VDD reset sky130_fd_sc_hd__inv_4
+.ends
+
+
+* expanding   symbol:  pfd/pfd1.sym # of pins=6
+** sym_path: /home/harsh/design/xschem/pfd/pfd1.sym
+.include pfd_pex.spice
+.GLOBAL GND
+.end

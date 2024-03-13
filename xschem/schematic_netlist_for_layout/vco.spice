@@ -1,0 +1,19 @@
+** sch_path: /home/harsh/design/xschem/PLL_FOLDER/vco/vco.sch
+.subckt vco vdd out vctrl vss
+*.PININFO vdd:B vss:B out:B vctrl:B
+XM1 net1 vctrl vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=30 nf=5 m=1
+XM2 net1 net1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=90 nf=5 m=1
+XM3 net4 net1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=80 nf=10 m=1
+XM4 net3 out net4 net4 sky130_fd_pr__pfet_01v8 L=0.15 W=80 nf=10 m=1
+XM5 net2 vctrl vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=30 nf=10 m=1
+XM6 net3 out net2 vss sky130_fd_pr__nfet_01v8 L=0.15 W=30 nf=10 m=1
+XM7 net7 net1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=160 nf=20 m=1
+XM8 net6 net3 net7 net7 sky130_fd_pr__pfet_01v8 L=0.15 W=160 nf=20 m=1
+XM9 net5 vctrl vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=60 nf=20 m=1
+XM10 net6 net3 net5 vss sky130_fd_pr__nfet_01v8 L=0.15 W=60 nf=20 m=1
+XM11 net9 net1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=240 nf=30 m=1
+XM12 out net6 net9 net9 sky130_fd_pr__pfet_01v8 L=0.15 W=240 nf=30 m=1
+XM13 net8 vctrl vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=90 nf=30 m=1
+XM14 out net6 net8 vss sky130_fd_pr__nfet_01v8 L=0.15 W=90 nf=30 m=1
+.ends
+.end

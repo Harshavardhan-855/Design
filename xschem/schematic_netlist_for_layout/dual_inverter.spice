@@ -1,0 +1,7 @@
+** sch_path: /home/harsh/design/xschem/dual_inverter.sch
+.subckt dual_inverter vdd vss inp out
+*.PININFO vdd:B vss:B inp:I out:O
+x4 inp VSS VSS VDD VDD net1 sky130_fd_sc_hd__inv_4
+x1 net1 VSS VSS VDD VDD out sky130_fd_sc_hd__inv_4
+.ends
+.end

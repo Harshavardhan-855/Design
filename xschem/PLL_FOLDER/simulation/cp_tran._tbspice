@@ -1,0 +1,79 @@
+** sch_path: /home/harsh/design/xschem/PLL_FOLDER/cp/cp_tran.sch
+**.subckt cp_tran
+V2 qb1 GND pulse('low' 'high' 100n 1n 1n 'tw' 'tp')
+V3 qa1 GND pulse('high' 'high' 100n 1n 1n 'tw' 'tp')
+C1 cp_out1 GND cload m=1
+V4 vdd GND 1.8
+V7 qb GND pulse('low' 'low' 100n 1n 1n 'tw' 'tp')
+V8 qa GND pulse('low' 'high' 100n 1n 1n 'tw' 'tp')
+C2 cp_out GND cload m=1
+V9 cp_bias GND 0.85
+x3 qa qb cp_out vdd GND cp_bias cp
+x2 qa1 qb1 cp_out1 vdd GND cp_bias cp
+**** begin user architecture code
+
+
+.options acct list savecurrents
+.temp 25
+.param cload=5p
++ ibias=10u  low=0  high=1.8
++ tw=40n  tp=80n
+******charging
+*+ tw_a=50n tp_a=80n
+*+ tw_b=0n  tp_b=0n
+******discharging
+*+ tw_a=0n tp_a=0n
+*+ tw_b=50n  tp_b=80n
+
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.ic v(cp_out)=1.8  v(cp_out1)=1.8
+
+*.meas tran TRAN_PERIOD TRIG V(QA) VAL=0.5 RISE=1 TARG V(QA) VAL=0.5 RISE=2
+*.meas tran TRAN_FREQ param='1/TRAN_PERIOD'
+
+.print TRAN_PERIOD  TRAN_FREQ
+*print @m.x1.xm3.msky130_fd_pr__nfet_01v8[id]  @m.x1.xm4.msky130_fd_pr__pfet_01v8[id]
+
+
+.control
+save all
+save @m.x1.xm3.msky130_fd_pr__nfet_01v8[vth]
+save @m.x1.xm3.msky130_fd_pr__nfet_01v8[vgs]
+save @m.x1.xm3.msky130_fd_pr__nfet_01v8[gm]
+
+save @m.x1.xm6.msky130_fd_pr__pfet_01v8[vth]
+
+save @m.x1.xm4.msky130_fd_pr__pfet_01v8[vsg]
+save @m.x1.xm6.msky130_fd_pr__pfet_01v8[vsg]
+
+
+op
+write cp_tran.raw
+set appendwrite
+
+tran 1n 10u
+write cp_tran.raw
+
+print  @m.x1.xm3.msky130_fd_pr__nfet_01v8[vth]
+print  @m.x1.xm3.msky130_fd_pr__nfet_01v8[gm]
+print  @m.x1.xm3.msky130_fd_pr__nfet_01v8[vgs]
+
+*print x1.bias  x1.n1   x1.cp_out
+
+.endc
+
+
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  PLL_FOLDER/cp/cp.sym # of pins=6
+** sym_path: /home/harsh/design/xschem/PLL_FOLDER/cp/cp.sym
+.include /home/harsh/design/xschem/PLL_FOLDER/cp/cp_pex.spice
+.GLOBAL GND
+.end

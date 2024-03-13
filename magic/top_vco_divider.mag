@@ -1,0 +1,33 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1709905001
+<< checkpaint >>
+rect -1260 3510 27588 6884
+rect -1260 -2860 34237 3510
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+use vco  x1
+timestamp 1709904903
+transform 1 0 -3796 0 1 2112
+box 3796 -3712 30124 3512
+use cp_schem  x2
+timestamp 1709904904
+transform 1 0 24167 0 1 688
+box 2161 -2288 8810 1562
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 vctrl
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 out_c
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 vdd
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 vss
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 ibias
+port 4 nsew
+<< end >>

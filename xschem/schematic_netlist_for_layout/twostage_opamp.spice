@@ -1,0 +1,12 @@
+** sch_path: /home/harsh/design/xschem/twostage_opamp.sch
+.subckt twostage_opamp inp1 inp2 vdd vss vbias vout
+*.PININFO inp1:I inp2:I vdd:B vss:B vbias:I vout:O
+XM1 net1 inp1 net3 vss sky130_fd_pr__nfet_01v8 L=0.30 W=50 nf=10 m=1
+XM2 net2 inp2 net3 vss sky130_fd_pr__nfet_01v8 L=0.30 W=50 nf=10 m=1
+XM3 net1 net1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.30 W=50 nf=10 m=1
+XM5 net3 vbias vss vss sky130_fd_pr__nfet_01v8 L=0.30 W=50 nf=10 m=1
+XM7 vout vbias vss vss sky130_fd_pr__nfet_01v8 L=0.30 W=50 nf=10 m=1
+XM4 net2 net1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.30 W=50 nf=10 m=1
+XM6 vout net2 vdd vdd sky130_fd_pr__pfet_01v8 L=0.30 W=50 nf=10 m=1
+.ends
+.end
