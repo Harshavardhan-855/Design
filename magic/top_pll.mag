@@ -1,29 +1,29 @@
 magic
 tech sky130A
-timestamp 1710252372
+timestamp 1710329453
 << metal1 >>
 rect 7205 1812 7305 1912
 rect 7205 1612 7305 1712
 rect 7205 1412 7305 1512
 rect 7205 1212 7305 1312
 rect 7205 1012 7305 1112
-use pfd  x1 ~/design/magic
+use pfd  x1
 timestamp 1708936645
 transform 1 0 5591 0 1 4053
 box 393 -940 1978 167
-use cp_schem  x2 ~/design/magic
+use cp_schem  x2
 timestamp 1709641130
 transform 1 0 7279 0 1 3524
 box 1160 -508 2429 783
-use vco  x3 ~/design/magic
+use vco  x3
 timestamp 1709454227
-transform 1 0 8529 0 1 2276
+transform 1 0 8711 0 1 2551
 box 1898 -1425 6086 1756
-use inverter  x4 ~/design/magic
+use inverter  x4
 timestamp 1709276979
 transform 1 0 7766 0 1 3606
 box -140 192 520 681
-use divider_3N  x5 ~/design/magic
+use divider_3N  x5
 timestamp 1709895641
 transform 1 0 7846 0 1 1610
 box 794 -818 2179 205
